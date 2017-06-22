@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hit hamster</title>
+    <style>
+        html,body,div,input,form{
+            margin: 0;
+            padding: 0;
+        }
+        #header{
+            margin: 10px 0 0 50px;
+        }
+        #hitHamster{
+            position: relative;
+            margin: 20px 0 0 50px;
+            width: 650px;
+            height: 486.88px;
+        }
+        #hitHamster img{
+            display: block;
+        }
+        #hitHamster img:first-child{
+            width: 650px;
+        }
+        #hitHamster #hamster{
+            width: 65px;
+            position: absolute;
+            top: 145px;
+            left: 43px;
+            display: none;
+        }
+        #hitHamster #hammer{
+            display:block;
+            position:absolute;
+            z-index:10;
+            width: 62px;
+        }
+        #hitHamster p{
+            font-size: 18px;
+            position: absolute;
+            left:0;
+            top: 0;
+            display: none;
+            color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <div id="header">
+        <input type="button" value="开始游戏">
+        <input type="button" value="结束游戏">
+        <form name="form" id="form">
+            <label>分数：</label>
+            <input type="text" name="score" value="">
+            <label>命中率：</label>
+            <input type="text" name="success">
+            <label>倒计时：</label>
+            <input type="text" name="countdown" value="">
+        </form>
+    </div>
+    <div id="hitHamster">
+        <img src="img/bg.png" alt="">
+        <img src="img/hanster.png" alt="" id="hamster">
+    </div>
+</div>
+</body>
+</html>
+<script src="js/public.js"></script>
+<script src="js/index.js"></script>
